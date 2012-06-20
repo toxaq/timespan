@@ -4,7 +4,7 @@
 # -*- encoding: utf-8 -*-
 Gem::Specification.new do |s|
   s.name = %q{timespan}
-  s.version = '0.3.3'
+  s.version = '0.3.4'
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{abhilash}, %{toxaq}]
   s.date = %q{2012-06-20}
@@ -22,7 +22,6 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
-    "lib/time_extensions.rb",
     "lib/timespan.rb",
     "test/helper.rb",
     "test/test_time_diff.rb",
