@@ -9,13 +9,10 @@ Gem which calculates the difference between two time
 
     require 'time_diff'
 
-    time_span = Time.diff(start_date_time, end_date_time)
+    time_span_from_dates = Time.diff(start_date_time, end_date_time)
+    time_span_from_seconds = Time.new(duration_in_seconds)
 
 This will return a Timespan object of time difference with properties of years, months, weeks, days, hours, minutes and seconds.
-
-    time_span.to_format
-
-    time_spen.to_format('%h:%m:%s')
 
 == Formatted Time difference
 
@@ -41,15 +38,21 @@ This will return a Timespan object of time difference with properties of years, 
 
 By default the format is 
 
-    '%y, %M, %w, %d and %h:%m:%s' 
+    '%y, %M, %w, %d and %h:%m:%s'
 
-this will return 
+and is called by
+
+    time_span.to_format
+
+and will return
 
     '1 year, 2 months, 3 weeks, 4 days and 12:05:52'.
 
-This result is obtained by calling the to_format method
+You can pass a custom format like this
 
-If you give '%d %h' as the format to the Timespan.to_format() method, then the output will be calculated only in days and hours.
+    time_span.to_format('%h:%m:%s')
+
+The output of the format is cummulative. If you give '%d %h' as the format to the Timespan.to_format() method, then the output will be calculated only in days and hours.
 
 == Contributing to time_diff
  
