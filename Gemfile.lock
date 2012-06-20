@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    timespan (0.3.4)
+    timespan (0.3.6)
       activesupport
       i18n
 
@@ -37,10 +37,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activesupport
   bundler (~> 1.1.4)
-  i18n
-  jeweler
+  jeweler (~> 1.8.3)
   shoulda
-  simplecov
-  timespan!
+  simplecov (~> 0.6.4)
