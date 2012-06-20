@@ -1,3 +1,6 @@
+require 'timespan/version'
+require 'time_extensions'
+
 class Timespan
   attr_reader :total_years, :total_months, :total_days, :total_hours, :total_minutes, :total_seconds,
               :years, :months, :days, :hours, :minutes, :seconds

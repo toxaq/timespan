@@ -5,10 +5,9 @@
 
 Gem::Specification.new do |s|
   s.name = %q{timespan}
-  s.version = "0.3.2"
-
+  s.version = Timespan::VERSION
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = [%q{abhilash}]
+  s.authors = [%q{abhilash}, %{toxaq}]
   s.date = %q{2012-06-20}
   s.description = %q{Returns a timespan object which can provide a formatted output of the following: years, months, weeks, days, hours, minutes and seconds}
   s.email = %q{abhidsm@gmail.com}
