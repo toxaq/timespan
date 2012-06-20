@@ -1,3 +1,10 @@
+PATH
+  remote: .
+  specs:
+    timespan (0.3.3)
+      activesupport
+      i18n
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -31,8 +38,9 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport
-  bundler (~> 1.0.0)
+  bundler (~> 1.1.4)
   i18n
   jeweler
   shoulda
   simplecov
+  timespan!

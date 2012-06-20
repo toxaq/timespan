@@ -1,4 +1,3 @@
-require 'timespan/version'
 require 'time_extensions'
 
 class Timespan
